@@ -9,6 +9,6 @@ hoge::~hoge() {
 }
 
 bool hoge::isEven( int number ) {
-	return true;
+	return (number % 2 == 0) ? true : false;
 }
 

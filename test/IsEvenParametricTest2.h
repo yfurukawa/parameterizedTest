@@ -2,10 +2,10 @@
 #define ISEVENPARAMETRICTEST2_H_
 
 #include <gtest/gtest.h>
-#include <tr1/tuple>
+#include <boost/tuple/tuple.hpp>
 #include "../test/hogeTest.h"
 
-class IsEvenParametricTest2 : public hogeTest, public ::testing::WithParamInterface< std::tr1::tuple<bool, int> > {
+class IsEvenParametricTest2 : public hogeTest, public ::testing::WithParamInterface< boost::tuple<bool, int> > {
 };
 
 #endif
